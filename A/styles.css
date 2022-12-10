@@ -1,0 +1,244 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #F7F7F7;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  color: #F7F7F7;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+.middle-text {
+  color: #F7F7F7;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 100px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sync {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150%;
+  text-align: center;
+  width: 100%;
+  border-style: none;
+}
+
+.top-container {
+  background-color: #EC255A;
+  position: relative;
+  padding-top: 20px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.coding-img {
+  border-radius: 100%;
+  width: 50%;
+  float: left;
+  margin-right: 30px;
+}
+
+.chillies-img {
+  border-radius: 70%;
+  width: 35%;
+  float: right;
+  margin-left: 30px;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #364F6b;
+  padding: 50px 0 20px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px;
+  text-align: left;
+}
+
+.intro {
+  color: #66BFBF;
+  width: 30%;
+  margin: 20px auto;
+}
+
+p {
+  line-height: 2;
+}
+
+.bottom-contact {
+  background-color: #364F6b;
+  padding: 50px 0 20px;
+}
+
+.space {
+  visibility: hidden;
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 6%;
+  margin: 30px auto 30px;
+}
+
+.middle-text1 {
+  background-color: #D47AE8;
+  margin-bottom: 100px;
+}
+
+.top-contact1 {
+  background-color: #292C6D;
+  position: relative;
+  padding-top: 100px;
+}
+
+.login {
+  margin: 0 auto 100px auto;
+}
+
+.im4 {
+  width: 35%;
+  margin-bottom: 50px;
+  border-radius: 50%
+}
+
+.im6 {
+  width: 100%;
+}
+
+.im5 {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.im7 {
+  width: 65%;
+}
+
+.gif1 {
+  width: 100%;
+  background-image: url('https://media4.giphy.com/media/3o7buijTqhjxjbEqjK/200w.webp?cid=ecf05e477h1x1v7vchqtsuz34chbj4ff2jld5fxp1k2jl8ht&rid=200w.webp&ct=g');
+}
+
+.top-contact2 {
+  background-color: #FFCE45;
+  position: relative;
+  padding-top: 50px;
+}
+
+.top-menu1 {
+  background-color: #172774;
+  position: relative;
+  padding-top: 100px;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto 100px;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+.top-contact {
+  background-color: #79018C;
+  position: relative;
+  padding-top: 100px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.coupon {
+  background-color: #D77FA1;
+}
+
+.wrapper span{
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.wrapper span.num{
+  font-size: 17px;
+  pointer-events: none;
+}

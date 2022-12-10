@@ -1,0 +1,67 @@
+<%- include("header_order") -%>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="">SWATO</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+</nav>
+<div class="top-menu1">
+  <h1>Cart</h1>
+</div>
+<hr class="space">
+
+<div class="middle-menu1">
+  <h3>Your Order</h3>
+  <br>
+
+  <hr class="space">
+  <div class="middle-menu1">
+    <div class="row">
+
+  <% searchedItems.forEach(function(item){ %>
+
+
+
+        <figure class="col-lg-3 col-md-4 col-sm-12" class="figure">
+          <img style="width:85%;" src=<%= item.image %> class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption text-right"><a href="billing.html"><h3><%= item.FOOD_NAME %></h3></a></figcaption>
+          <figcaption class="figure-caption text-right"><%= item.CAT_NAME %> -<%= item.AMOUNT_OF_NUTRIENTS %></figcaption>
+          <figcaption class="figure-caption text-right"><%= item.QUANTITY %></figcaption>
+          <figcaption class="figure-caption text-right">Ratings-<%= item.RATINGS %>⭐</figcaption>
+          <figcaption class="figure-caption text-right">Price-<%= item.PRICE %></figcaption>
+          <figcaption class="figure-caption text-right">Qty-<%= QTY %></figcaption>
+        </figure>
+
+        <h3 class="intro">Total amount = <%= AMT %></h3>
+
+  <% }) %>
+
+  </div>
+
+
+
+  </div>
+
+
+<form class="" action="/order" method="post">
+  <hr class="space">
+  <button class="btn btn-danger" type="submit">Place Order</button>
+  <hr class="space">
+</form>
+
+
+
+
+  <h3>Cancellation Policy</h3>
+  <br>
+  <p>100% cancellation fee will be applicable if you decide to cancel the order anytime after order placement</p>
+  <p>Avoid cancellation as it leads to food wastage</p>
+</div>
+<hr class="space">
+<div class="bottom-contact">
+  <p class="copyright">© 2021 project-swato.</p>
+</div>
+
+<%- include("footer") -%>

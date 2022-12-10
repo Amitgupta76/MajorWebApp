@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swato-Signup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="icon" href="favicon1.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <div class="top-contact2">
+    <img class="im4" src="food4.png" alt="img">
+  </div>
+
+  <hr class="space">
+
+  <div class="middle-contact">
+    <h3>Happiness is...</h3>
+    <h3>When the food delivery guy rings your door bell..</h3>
+    <h3>Isn't it?</h3>
+    <hr class="space">
+    <h3>Sign up here and Enjoy delicious food at the safety of your home.</h3>
+    <hr class="space">
+    <form action="/signup" class="row needs-validation" method="post" novalidate>
+      <div class="col-12">
+        <label class="form-label">First name</label>
+        <input type="text" name="fname" maxlength="10" minlength="3" class="form-control" placeholder="First-name" aria-label="First-name" required />
+        <div class="invalid-feedback">
+          First-name must at least contain 3 letters!
+        </div>
+      </div>
+      <hr class="space">
+      <div class="col-12">
+        <label class="form-label">Last name</label>
+        <input type="text" name="lname" class="form-control" placeholder="Last-name" aria-label="Last-name">
+        <div class="invalid-feedback">
+          Please fill this field!
+        </div>
+      </div>
+      <hr class="space">
+      <div class="col-12">
+        <label for="EmailAddressInput" class="form-label">Email address</label>
+        <input type="email" name="email" class="form-control exists" id="EmailAddressInput" placeholder="name@example.com" required />
+        <div class="invalid-feedback">
+          <h1 class="exists1"></h1>
+          Please enter a valid email id!
+        </div>
+      </div>
+      <hr class="space">
+      <div class="col-12">
+        <button class="btn btn-danger" name="signup" type="submit">SUBMIT</button>
+        <hr class="space">
+      </div>
+    </form>
+    <script>
+    var forms = document.querySelectorAll( ".needs-validation" );
+
+    Array.prototype.slice.call( forms ).forEach( function( form )
+    {
+      form.addEventListener( "submit", function( event )
+     {
+       if( !form.checkValidity( ) )
+       {
+         event.preventDefault();
+         event.stopPropagation();
+       }
+       form.classList.add( "was-validated" );
+     }, false );
+   } );
+    </script>
+
+  </div>
+
+  <div class="bottom-contact">
+    <p class="copyright">© 2021 project-swato.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>

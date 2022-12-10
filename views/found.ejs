@@ -1,0 +1,54 @@
+<%- include("header") -%>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="">SWATO</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="menu.html">Menu</a>
+      </li>
+    </ul>
+    <div class="container-fluid">
+      <form class="d-flex">
+        <input class="centre" class="form-control me-2" type="🔍 search" placeholder="🔍 search" aria-label="🔍 Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+</nav>
+<div class="top-menu1">
+  <h1>Menu</h1>
+</div>
+<hr class="space">
+<div class="middle-menu1">
+  <div class="row">
+
+<% searchedItems.forEach(function(item){ %>
+
+
+
+      <figure class="col-lg-3 col-md-4 col-sm-12" class="figure">
+        <img style="width:85%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRAUitFCNq4I66Ho4ae5m36F0Xyqq0LkyZxw&usqp=CAU" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <figcaption class="figure-caption text-right"><a href="billing.html"><h3><%= item.FOOD_NAME %></h3></a></figcaption>
+        <figcaption class="figure-caption text-right"><%= item.CAT_NAME %>-<%= item.AMOUNT_OF_NUTRIENTS %></figcaption>
+        <figcaption class="figure-caption text-right"><%= item.QUANTITY %></figcaption>
+        <figcaption class="figure-caption text-right">Ratings-<%= item.RATINGS %>⭐</figcaption>
+        <figcaption class="figure-caption text-right">Price-<%= item.PRICE %></figcaption>
+      </figure>
+
+<% }) %>
+
+</div>
+</div>
+
+
+
+<div class="bottom-contact">
+  <p class="copyright">© 2021 project-swato.</p>
+</div>
+
+<%- include("footer") -%>
