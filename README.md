@@ -16,3 +16,4 @@ Instructions:
    (In your command prompt)
 5-Type "localhost:3000" in google chrome to test the web application.
    
+![Server](https://user-images.githubusercontent.com/84084490/206857208-111af14a-8eed-4324-af76-c0c365b46a6d.png)
